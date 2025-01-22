@@ -45,12 +45,24 @@ h1 {
   background: var(--yellow-color);
 }
 
+.box.change-color.is-active {
+  background: var(--blue-color);
+}
+
 .box.toggle-color {
   background: var(--orange-color);
 }
 
+.box.toggle-color.is-active {
+  background: var(--red-color);
+}
+
 .box.trigger {
   background: var(--violet-color);
+}
+
+.box.target.is-hidden {
+  opacity: 0%;
 }
 
 .box.target {
