@@ -6,13 +6,13 @@ function changeYellow() {
 
 boxChangeColor.addEventListener("click", changeYellow);
 
-var boxChangeColor = document.querySelector(".toggle-color");
+var boxToggleColor = document.querySelector(".toggle-color");
 
 function changeColor() {
-  boxChangeColor.classList.toggle("is-active");
+  boxToggleColor.classList.toggle("is-active");
 }
 
-boxChangeColor.addEventListener("click", changeColor);
+boxToggleColor.addEventListener("click", changeColor);
 
 var boxTrigger = document.querySelector(".trigger");
 var boxTarget = document.querySelector(".target");
@@ -22,3 +22,17 @@ function hideBox() {
 }
 
 boxTrigger.addEventListener("click", hideBox);
+
+var boxTriggerAllSelf = document.querySelector(".trigger-all-self");
+var boxTriggerAll = document.querySelector(".trigger-all");
+
+boxTriggerAll.addEventListener("click", changeYellow);
+boxTriggerAll.addEventListener("click", changeColor);
+
+boxTriggerAllSelf.addEventListener("click", changeYellow);
+boxTriggerAllSelf.addEventListener("click", changeColor);
+
+function allSelf() {
+  boxTriggerAllSelf.classList.toggle("is-active");
+}
+boxTriggerAllSelf.addEventListener("click", allSelf);
